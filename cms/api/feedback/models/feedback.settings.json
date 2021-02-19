@@ -1,24 +1,24 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "feedbacks",
   "info": {
-    "name": "Services"
+    "name": "Feedback"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "person": {
       "type": "string"
     },
-    "description": {
+    "role": {
+      "type": "string"
+    },
+    "feedback": {
       "type": "richtext"
     },
-    "banner_color": {
-      "type": "string"
-    },
-    "banner_picture": {
+    "picture": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -28,9 +28,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "short_description": {
-      "type": "richtext"
     }
   }
 }
