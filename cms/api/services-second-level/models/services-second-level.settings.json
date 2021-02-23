@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "services_second_level_s",
   "info": {
-    "name": "Services"
+    "name": "Services (second level)"
   },
   "options": {
     "increments": true,
@@ -12,14 +12,8 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
-    "banner_color": {
-      "type": "string"
-    },
-    "banner_picture": {
-      "model": "file",
+    "pictures": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -32,29 +26,32 @@
     "short_description": {
       "type": "richtext"
     },
-    "slug": {
-      "type": "string"
-    },
-    "services_second_levels": {
-      "via": "service",
-      "collection": "services-second-level"
-    },
-    "doctors": {
-      "collection": "doctors",
-      "via": "services",
-      "dominant": true
-    },
     "text_1": {
       "type": "richtext"
     },
     "text_2": {
       "type": "richtext"
     },
-    "technologies": {
-      "type": "richtext"
+    "doctors": {
+      "collection": "doctors",
+      "via": "services_second_levels",
+      "dominant": true
+    },
+    "service": {
+      "model": "services",
+      "via": "services_second_levels"
     },
     "methods": {
       "type": "richtext"
+    },
+    "technologies": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "hot": {
+      "type": "boolean"
     }
   }
 }

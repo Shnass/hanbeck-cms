@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/services-second-levels",
+      "handler": "services-second-level.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/services-second-levels/count",
+      "handler": "services-second-level.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/services-second-levels/:id",
+      "handler": "services-second-level.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/services-second-levels",
+      "handler": "services-second-level.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/services-second-levels/:id",
+      "handler": "services-second-level.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/services-second-levels/:id",
+      "handler": "services-second-level.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

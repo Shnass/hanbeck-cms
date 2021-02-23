@@ -25,6 +25,14 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "services_second_levels": {
+      "via": "doctors",
+      "collection": "services-second-level"
+    },
+    "services": {
+      "via": "doctors",
+      "collection": "services"
     }
   }
 }
