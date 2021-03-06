@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prices",
+  "info": {
+    "name": "Prices"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "price_explained": {
+      "type": "richtext"
+    },
+    "services_second_levels": {
+      "collection": "services-second-level",
+      "via": "prices",
+      "dominant": true
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

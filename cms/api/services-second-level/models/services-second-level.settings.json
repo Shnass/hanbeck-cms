@@ -52,6 +52,10 @@
     },
     "hot": {
       "type": "boolean"
+    },
+    "prices": {
+      "via": "services_second_levels",
+      "collection": "prices"
     }
   }
 }
