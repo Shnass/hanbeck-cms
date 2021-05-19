@@ -55,6 +55,15 @@
     },
     "methods": {
       "type": "richtext"
+    },
+    "seo_title": {
+      "type": "text"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "seo_keywords": {
+      "type": "text"
     }
   }
 }

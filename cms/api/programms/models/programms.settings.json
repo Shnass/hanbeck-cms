@@ -1,0 +1,114 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programms",
+  "info": {
+    "name": "Programms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "thumbicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "thumbhover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "bg": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "header_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "thirdlevel": {
+      "collection": "prices"
+    },
+    "result": {
+      "type": "richtext"
+    },
+    "result_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "doctors": {
+      "collection": "doctors",
+      "via": "programms",
+      "dominant": true
+    },
+    "text1": {
+      "type": "richtext"
+    },
+    "text2": {
+      "type": "richtext"
+    },
+    "technologies": {
+      "type": "richtext"
+    },
+    "methods": {
+      "type": "richtext"
+    },
+    "header_text": {
+      "type": "richtext"
+    },
+    "services_second_levels": {
+      "via": "programms",
+      "collection": "services-second-level"
+    },
+    "thumbtext": {
+      "type": "text"
+    },
+    "seo_title": {
+      "type": "text"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "seo_keywords": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_multiple_text_reasons",
+  "info": {
+    "name": "reasons",
+    "icon": "barcode"
+  },
+  "options": {},
+  "attributes": {
+    "r1": {
+      "type": "richtext"
+    },
+    "r2": {
+      "type": "richtext"
+    },
+    "r3": {
+      "type": "richtext"
+    },
+    "r4": {
+      "type": "richtext"
+    },
+    "r5": {
+      "type": "richtext"
+    },
+    "r6": {
+      "type": "richtext"
+    },
+    "r7": {
+      "type": "richtext"
+    },
+    "r8": {
+      "type": "richtext"
+    }
+  }
+}

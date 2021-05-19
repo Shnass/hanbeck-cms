@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_data",
+  "info": {
+    "name": "contact_data"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "instagram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "workhours": {
+      "type": "string"
+    },
+    "coordinates": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

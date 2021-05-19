@@ -54,8 +54,22 @@
       "type": "boolean"
     },
     "prices": {
+      "collection": "prices",
+      "via": "services_second_levels"
+    },
+    "programms": {
+      "collection": "programms",
       "via": "services_second_levels",
-      "collection": "prices"
+      "dominant": true
+    },
+    "seo_title": {
+      "type": "text"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "seo_keywords": {
+      "type": "text"
     }
   }
 }

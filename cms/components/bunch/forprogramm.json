@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_bunch_forprogramms",
+  "info": {
+    "name": "forprogramm",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "seos",
+  "info": {
+    "name": "SEO"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    }
+  }
+}

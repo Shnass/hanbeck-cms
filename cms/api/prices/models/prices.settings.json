@@ -25,12 +25,66 @@
       "type": "richtext"
     },
     "services_second_levels": {
-      "collection": "services-second-level",
       "via": "prices",
+      "collection": "services-second-level",
       "dominant": true
     },
     "price": {
       "type": "decimal"
+    },
+    "description_extended": {
+      "type": "richtext"
+    },
+    "doctors": {
+      "collection": "doctors",
+      "via": "prices",
+      "dominant": true
+    },
+    "text1": {
+      "type": "richtext"
+    },
+    "text2": {
+      "type": "richtext"
+    },
+    "technologies": {
+      "type": "richtext"
+    },
+    "methods": {
+      "type": "richtext"
+    },
+    "preform_text": {
+      "type": "richtext"
+    },
+    "forprogramm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "bunch.forprogramm"
+    },
+    "detail_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "whentodo": {
+      "type": "richtext"
+    },
+    "whentodo_title": {
+      "type": "string"
+    },
+    "seo_title": {
+      "type": "text"
+    },
+    "seo_description": {
+      "type": "text"
+    },
+    "seo_keywords": {
+      "type": "text"
     }
   }
 }

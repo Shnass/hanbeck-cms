@@ -16,7 +16,7 @@
       "type": "string"
     },
     "main_picture": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -33,6 +33,14 @@
     "services": {
       "via": "doctors",
       "collection": "services"
+    },
+    "programms": {
+      "via": "doctors",
+      "collection": "programms"
+    },
+    "prices": {
+      "via": "doctors",
+      "collection": "prices"
     }
   }
 }

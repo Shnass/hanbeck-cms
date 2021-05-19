@@ -19,7 +19,7 @@
       "type": "richtext"
     },
     "picture": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -28,6 +28,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "youtube": {
+      "type": "string"
     }
   }
 }
