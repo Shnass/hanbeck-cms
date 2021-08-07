@@ -21,6 +21,9 @@
     "slug": {
       "type": "string"
     },
+    "includes": {
+      "type": "text"
+    },
     "price_explained": {
       "type": "richtext"
     },

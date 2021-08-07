@@ -2,7 +2,8 @@
   "collectionName": "components_bunch_forprogramms",
   "info": {
     "name": "forprogramm",
-    "icon": "apple-alt"
+    "icon": "apple-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "bg": {
+      "type": "string"
     }
   }
 }
